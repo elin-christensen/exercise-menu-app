@@ -1,0 +1,10 @@
+﻿
+﻿@using DotNetMenu.Models.ViewModels
+@model MenuViewModel
+
+<h1>Menu for You</h1>
+
+@foreach (var ivm in Model.ItemViewModels) {
+@ivm.Name
+@ivm.Price
+}
